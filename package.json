@@ -7,7 +7,7 @@
     "setup": "mkdir dist",
     "test": "node src/test.js",
     "bundle": "zip -r dist/bundle.zip src/lambda.js node_modules",
-    "deploy": "aws lambda update-function-code --function-name contentfulWebhookLambda --zip-file fileb://./dist/bundle.zip"
+    "deploy": "aws lambda update-function-code --function-name fitx-contentful-slack-adaptor-lambda --zip-file fileb://./dist/bundle.zip"
   },
   "author": "frederik@contentful.com",
   "license": "MIT",

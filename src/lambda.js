@@ -152,7 +152,7 @@ exports.handler = function (event, context, callback) {
     for (var key in body.fields) {
       slackMessageTemplate.attachments[0].fields.push({
         "title": "field." + key,
-        "value": body.fields[key]['en-US'],
+        "value": body.fields[key]['de-DE'],
         short: false
       });
     }
