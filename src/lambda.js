@@ -48,8 +48,8 @@ exports.handler = function (event, context, callback) {
   // Message template following the slack specification:
   // https://api.slack.com/docs/formatting
   var slackMessageTemplate = {
-    "channel": "#contenthooks",
-    "username": `Webhook: ${event.name}`,
+    "channel": "#contentful-updates",
+    "username": `Contentful-Webhook: ${event.name}`,
     "icon_emoji": ":contentful:",
     "attachments": [{
       "fallback": "",
